@@ -1,6 +1,12 @@
+import NavBar from './components/NavBar/NavBar';
+import DataTable from "components/DataTable/DataTable";
+import Footer from "components/Footer/Footer";
+
 const App = (): JSX.Element => (
   <>
-    <h1>DSVendas</h1>
+    <NavBar />
+    <DataTable />
+    <Footer />
   </>
 );
 
