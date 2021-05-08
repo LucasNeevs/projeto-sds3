@@ -4,7 +4,7 @@ export interface Sale {
   id: number;
   visited: number;
   deals: number;
-  amount: number;
+  amountDouble: number;
   date: string;
   seller: Seller;
 }
