@@ -15,7 +15,6 @@ const DonutChart = (): JSX.Element => {
   useEffect((): void => {
     axios.get(`${BASE_URL}/sales/amount-by-seller`)
       .then((response): void => {
-        console.log('TO NO THEN');
         const data = response.data as SaleSum[];
         const myLabels = data.map((r: any) => r.sellerName);
         const mySeries = data.map((r: any) => r.sum);
@@ -43,7 +42,6 @@ const DonutChart = (): JSX.Element => {
         type="donut"
         height="240"
       />
-      <p>oi</p>
     </>
   );
 };
